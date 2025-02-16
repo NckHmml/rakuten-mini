@@ -1,0 +1,17 @@
+FROM ./RakutenAI-2.0-mini-instruct/
+
+TEMPLATE """{{ if .System }}SYSTEM:
+{{ .System }}
+{{ end }}
+{{ if .Prompt }}USER:
+{{ .Prompt }}
+{{ end }}ASSISTANT:
+""" 
+
+PARAMETER seed 42
+PARAMETER temperature 0.5
+PARAMETER top_k 10
+PARAMETER top_p 0.4
+PARAMETER min_p 0.05
+
+MESSAGE system あなたの名前は「RakutenAI」。あなたはAIチャットボットです。

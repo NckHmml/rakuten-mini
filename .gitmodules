@@ -1,0 +1,3 @@
+[submodule "RakutenAI-2.0-mini-instruct"]
+	path = RakutenAI-2.0-mini-instruct
+	url = https://huggingface.co/Rakuten/RakutenAI-2.0-mini-instruct
