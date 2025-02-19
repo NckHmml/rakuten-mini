@@ -49,3 +49,15 @@ A somewhat longer prompt which needs quite some CPU resources;
 
 ### Notes
 Either due this using a mini-llm, or perhaps a misconfiguration on my side, follow-up questions do not work as well as they should. use `/clear` between questions.
+
+### Others
+
+Convert to GGUF (requires gguf-py)
+```
+ ./.venv/bin/python convert_hf_to_gguf.py ./RakutenAI-2.0-mini-instruct --outfile RakutenAI-2.0-mini-instruct.gguf
+ ```
+
+Quantize example (requires llama.cpp)
+ ```
+ llama-quantize model.gguf RakutenAI-2.0-mini-instruct-Q4_K_M.gguf Q4_K_M
+ ```

@@ -1,0 +1,9 @@
+.venv
+.vscode
+obj
+bin
+
+# Tools, mostly from llama.cpp
+gguf-py
+convert_hf_to_gguf.py
+*.gguf
